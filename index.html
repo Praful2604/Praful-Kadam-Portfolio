@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Praful Kadam – Flutter Developer. Building cross-platform mobile and web apps with Flutter & Dart." />
+  <meta name="keywords" content="Flutter Developer, Dart, Firebase, Mobile App Developer, Praful Kadam" />
+  <meta name="author" content="Praful Kadam" />
+  <title>Praful Kadam | Flutter Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Elements -->
+  <div class="grid-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">&lt;<span>PK</span> /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:prafulkadam8697@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#certifications" onclick="closeMobile()">Certifications</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow">Available for opportunities</div>
+          <h1 class="hero-name">
+            <div class="first">Praful</div>
+            <div class="last">Kadam.</div>
+          </h1>
+          <div class="hero-title-line">
+            <span id="typedText"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Flutter Developer with hands-on experience building cross-platform mobile and web applications using Flutter and Dart. Passionate about clean architecture, beautiful UI, and scalable solutions.
+          </p>
+          <div class="hero-cta">
+           <a href="./assets/resume.pdf"
+   target="_blank"
+   class="btn btn-primary">
+
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="2.5">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+    <polyline points="7 10 12 15 17 10"/>
+    <line x1="12" y1="15" x2="12" y2="3"/>
+  </svg>
+
+  Resume
+</a>
+            <a href="#contact" class="btn btn-outline">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact Me
+            </a>
+            <a href="#projects" class="btn btn-ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              View Projects
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">8.05</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-ring">
+            <div class="hero-avatar-inner">PK</div>
+          </div>
+          <div class="floating-badge badge-flutter">Flutter</div>
+          <div class="floating-badge badge-firebase">Firebase</div>
+          <div class="floating-badge badge-dart">Dart</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-left fade-in fade-in-delay-1">
+          <div class="about-label">Who I Am</div>
+          <h3 class="about-headline">
+            Crafting <em>exceptional</em><br/>mobile experiences
+          </h3>
+          <div class="about-tags">
+            <span class="about-tag">Flutter</span>
+            <span class="about-tag">Dart</span>
+            <span class="about-tag">Firebase</span>
+            <span class="about-tag">Supabase</span>
+            <span class="about-tag">Clean Architecture</span>
+            <span class="about-tag">UI/UX</span>
+          </div>
+        </div>
+        <div class="about-right fade-in fade-in-delay-2">
+          <div class="about-text">
+            <p>
+              I'm a <strong>Flutter Developer</strong> specializing in building cross-platform mobile and web applications. With deep expertise in <strong>Flutter, Dart, Firebase, and Supabase</strong>, I craft applications that are not only functional but delightful to use.
+            </p>
+            <p>
+              My passion lies at the intersection of clean, <strong>scalable architecture</strong> and modern UI/UX design. I believe great apps are built on solid foundations — well-structured code, thoughtful state management, and responsive interfaces that adapt seamlessly across devices.
+            </p>
+            <p>
+              Currently pursuing my B.E. in Computer Engineering at <strong>Gharda Institute of Technology</strong>, I bring both academic rigor and real-world project experience to every challenge I tackle.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">📱</div>
+              <div class="highlight-title">Mobile-First</div>
+              <div class="highlight-text">Building for Android, iOS, and Web with a single codebase</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">⚡</div>
+              <div class="highlight-title">Performance</div>
+              <div class="highlight-text">Optimized apps with smooth 60fps animations and fast load times</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🏗️</div>
+              <div class="highlight-title">Architecture</div>
+              <div class="highlight-text">Clean code patterns with proper separation of concerns</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🎨</div>
+              <div class="highlight-title">Design Systems</div>
+              <div class="highlight-text">Translating Figma designs into pixel-perfect Flutter UIs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category cat-lang fade-in fade-in-delay-1">
+          <div class="skill-cat-label">// Languages</div>
+          <div class="skill-items">
+            <span class="skill-chip">🎯 Dart</span>
+            <span class="skill-chip">🌐 HTML</span>
+            <span class="skill-chip">🎨 CSS</span>
+          </div>
+        </div>
+        <div class="skill-category cat-fw fade-in fade-in-delay-2">
+          <div class="skill-cat-label">// Frameworks & Tech</div>
+          <div class="skill-items">
+            <span class="skill-chip">📱 Flutter Mobile</span>
+            <span class="skill-chip">🌍 Flutter Web</span>
+            <span class="skill-chip">🔌 REST API</span>
+            <span class="skill-chip">📦 JSON Parsing</span>
+            <span class="skill-chip">💳 Payment Gateway</span>
+          </div>
+        </div>
+        <div class="skill-category cat-state fade-in fade-in-delay-3">
+          <div class="skill-cat-label">// State Management</div>
+          <div class="skill-items">
+            <span class="skill-chip">🔄 Provider</span>
+            <span class="skill-chip">⚡ GetX</span>
+            <span class="skill-chip">🪝 Riverpod</span>
+          </div>
+        </div>
+        <div class="skill-category cat-db fade-in fade-in-delay-1">
+          <div class="skill-cat-label">// Backend & Database</div>
+          <div class="skill-items">
+            <span class="skill-chip">🔥 Firebase</span>
+            <span class="skill-chip">⚡ Supabase</span>
+            <span class="skill-chip">💾 Isar</span>
+            <span class="skill-chip">🐝 Hive</span>
+            <span class="skill-chip">🗄️ Sqflite</span>
+          </div>
+        </div>
+        <div class="skill-category cat-tools fade-in fade-in-delay-2">
+          <div class="skill-cat-label">// Tools</div>
+          <div class="skill-items">
+            <span class="skill-chip">🐙 Git</span>
+            <span class="skill-chip">🐈 GitHub</span>
+            <span class="skill-chip">💻 VS Code</span>
+            <span class="skill-chip">🤖 Android Studio</span>
+            <span class="skill-chip">🌌 Anti-Gravity Tech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="flutter">Flutter</button>
+        <button class="filter-btn" data-filter="firebase">Firebase</button>
+        <button class="filter-btn" data-filter="web">Flutter Web</button>
+      </div>
+      <div class="projects-grid">
+
+       
+
+        <!-- Project 1 -->
+         
+        <div class="project-card fade-in fade-in-delay-2" data-tags="flutter firebase web">
+          <div class="project-top">
+            <div class="project-num">02</div>
+            <div class="project-icon icon-green">📸</div>
+            <div class="project-name">Instant Photos</div>
+            <div class="project-subtitle">Cloud Photo Sharing Platform</div>
+            <p class="project-desc">Photo sharing web app for photographers with face recognition filtering and digital album management.</p>
+          </div>
+          <div class="project-features">
+            <div class="feature-item"><div class="feature-dot"></div><span>Firebase Storage for cloud photo uploads</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Real-time photo updates with Firestore</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Face recognition-based photo filtering</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Digital album creation and management</span></div>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span class="tech-badge">Flutter Web</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">Firestore</span>
+              <span class="tech-badge">Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praful2604/instant-photos-website" target="_blank" class="project-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link demo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in fade-in-delay-3" data-tags="flutter firebase">
+          <div class="project-top">
+            <div class="project-num">03</div>
+            <div class="project-icon icon-pink">🌿</div>
+            <div class="project-name">SevaSutra</div>
+            <div class="project-subtitle">Community & Health Survey App</div>
+            <p class="project-desc">Offline-first survey app for NGO fieldwork with Firebase sync and optimized UX for rural users.</p>
+          </div>
+          <div class="project-features">
+            <div class="feature-item"><div class="feature-dot"></div><span>Offline-first architecture using Isar database</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Firebase cloud sync when connectivity restored</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Structured multi-step form workflows</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Optimized UX for low-literacy rural users</span></div>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Isar</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">Firestore</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praful2604/SevaSutra" target="_blank" class="project-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link demo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+   <!-- Project 3 -->
+        <div class="project-card fade-in fade-in-delay-1" data-tags="flutter firebase">
+          <div class="project-top">
+            <div class="project-num">01</div>
+            <div class="project-icon icon-blue">📋</div>
+            <div class="project-name">Feedback Flow</div>
+            <div class="project-subtitle">Complaint Management System</div>
+            <p class="project-desc">Role-based complaint management app with real-time updates, anonymous submissions, and admin dashboard.</p>
+          </div>
+          <div class="project-features">
+            <div class="feature-item"><div class="feature-dot"></div><span>Firebase Auth with Role-Based Access Control</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Real-time complaint updates via Firestore</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Anonymous complaint submission support</span></div>
+            <div class="feature-item"><div class="feature-dot"></div><span>Responsive Material UI design</span></div>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">Firebase Auth</span>
+              <span class="tech-badge">Firestore</span>
+              <span class="tech-badge">RTDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praful2604/feedback_flow_Student_app" target="_blank" class="project-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link demo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-card fade-in fade-in-delay-1">
+        <div class="edu-cgpa">
+          8.05
+          <div class="edu-cgpa-label">CGPA / 10</div>
+        </div>
+        <div class="edu-degree">Bachelor of Engineering</div>
+        <div class="edu-school">Computer Engineering · Gharda Institute of Technology</div>
+        <div class="edu-meta">
+          <div class="edu-meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Aug 2022 – Jun 2026
+          </div>
+          <div class="edu-meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lanja, Maharashtra
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-list">
+        <div class="cert-card fade-in fade-in-delay-1">
+          <div class="cert-badge-icon">🏅</div>
+          <div>
+            <div class="cert-name">Advanced Flutter: Build Enterprise-Ready Apps</div>
+            <div class="cert-provider">Udemy</div>
+          </div>
+        </div>
+        <div class="cert-card fade-in fade-in-delay-2">
+          <div class="cert-badge-icon">📜</div>
+          <div>
+            <div class="cert-name">Flutter Essential Training</div>
+            <div class="cert-provider">LinkedIn Learning</div>
+          </div>
+        </div>
+        <div class="cert-card fade-in fade-in-delay-3">
+          <div class="cert-badge-icon">🔥</div>
+          <div>
+            <div class="cert-name">Firebase Essential Training</div>
+            <div class="cert-provider">LinkedIn Learning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-left fade-in fade-in-delay-1">
+          <h2>Let's build something <span>remarkable</span> together.</h2>
+          <p>Open to full-time roles, freelance projects, and internships. Let's connect and discuss how I can contribute to your team.</p>
+          <div class="contact-list">
+            <a href="mailto:prafulkadam8697@gmail.com" class="contact-item">
+              <div class="contact-item-icon ci-email">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-val">prafulkadam8697@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+918087614598" class="contact-item">
+              <div class="contact-item-icon ci-phone">📱</div>
+              <div>
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-val">+91 80876 14598</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/prafulkadam" target="_blank" class="contact-item">
+              <div class="contact-item-icon ci-li">💼</div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-val">linkedin.com/in/prafulkadam</div>
+              </div>
+            </a>
+            <a href="https://github.com/Praful2604" target="_blank" class="contact-item">
+              <div class="contact-item-icon ci-gh">🐙</div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-val">github.com/Praful2604</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-section fade-in fade-in-delay-2">
+          <div class="form-title">Send a Message</div>
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input class="form-input" type="text" id="name" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" placeholder="john@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input class="form-input" type="text" id="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="handleFormSubmit()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          Built with ❤️ by <strong>Praful Kadam</strong>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Praful2604" target="_blank" class="social-link" title="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/prafulkadam" target="_blank" class="social-link" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:prafulkadam8697@gmail.com" class="social-link" title="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+        <div class="footer-copy">© 2024 Praful Kadam. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
